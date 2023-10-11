@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Title of Your Research
+title: InsV2V
 ---
 
 ## Abstract
