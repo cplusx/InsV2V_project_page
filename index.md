@@ -104,6 +104,8 @@ title: Instruct Vid2Vid
 We introduce a novel and efficient approach for text-based video-to-video editing that eliminates the need for resource-intensive per-video-per-model finetuning. At the core of our approach is a synthetic paired video dataset tailored for video-to-video transfer tasks. Inspired by Instruct Pix2Pix's image transfer via editing instruction, we adapt this paradigm to the video domain. Extending the Prompt-to-Prompt to videos, we efficiently generate paired samples, each with an input video and its edited counterpart. Alongside this, we introduce the Long Video Sampling Correction during sampling, ensuring consistent long videos across batches. Our method surpasses current methods like Tune-A-Video, heralding substantial progress in text-based video-to-video editing and suggesting exciting avenues for further exploration and deployment.
 
 <div class="title"> Results </div>
+Our method requires only an **input video** and an **editing prompt** to modify the video. There is **no need** to fine-tune the model on each video.
+
 
 <div class="gif-container">
     {% for image in site.static_files %}
@@ -116,7 +118,15 @@ We introduce a novel and efficient approach for text-based video-to-video editin
 </div>
 
 <div class="title"> Synthetic Paired Video Dataset </div>
+![data_pipe](figures/data_pipe.png)
 
+<div class="title"> Compare To Other Editing Methods </div>
+<div style="display: flex; justify-content: center;">
+<video width="480" controls>
+  <source src="videos/TGVE_video_edit_demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+</div>
 
 <div class="title"> Bibex </div>
 
