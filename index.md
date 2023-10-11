@@ -124,6 +124,18 @@ The pipeline for generating a synthetic dataset using a large language model, wh
 [Links to download]({{ site.baseurl }}{% link download.md %})
 ![data_pipe](figures/data_pipe.png)
 
+
+<div class="title"> Examples of Generated Synthetic Videos </div>
+<div class="gif-container">
+    {% for image in site.static_files %}
+        {% if image.path contains 'synthetic_sample/' and image.extname == '.gif' %}
+            <div class="gif-item">
+                <img src=".{{ image.path }}" alt="{{ image.name }}">
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
+
 <div class="title"> Compare To Other Editing Methods </div>
 <div style="display: flex; justify-content: center;">
 <video width="720" controls>
