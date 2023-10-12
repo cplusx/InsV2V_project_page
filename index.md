@@ -89,12 +89,15 @@ title: Instruct Vid2Vid
 
 
 <div class="button-container">
-  <button class="button">
-    arXiv
-  </button>
-  <button class="button">
-    Github
-  </button>
+  <a href="https://arxiv.org" target="_blank">
+      <button class="button">arXiv</button>
+  </a>
+  <a href="https://github.com" target="_blank">
+      <button class="button">Github</button>
+  </a>
+  <a href="{% link download.md %}">
+      <button class="button"> Synthetic Videos Download </button>
+  </a>
 </div>
 
 
@@ -104,7 +107,7 @@ title: Instruct Vid2Vid
 We introduce a novel and efficient approach for text-based video-to-video editing that eliminates the need for resource-intensive per-video-per-model finetuning. At the core of our approach is a synthetic paired video dataset tailored for video-to-video transfer tasks. Inspired by Instruct Pix2Pix's image transfer via editing instruction, we adapt this paradigm to the video domain. Extending the Prompt-to-Prompt to videos, we efficiently generate paired samples, each with an input video and its edited counterpart. Alongside this, we introduce the Long Video Sampling Correction during sampling, ensuring consistent long videos across batches. Our method surpasses current methods like Tune-A-Video, heralding substantial progress in text-based video-to-video editing and suggesting exciting avenues for further exploration and deployment.
 
 <div class="title"> Editing Results </div>
-Our method requires only an **input video** and an **editing prompt** to modify the video. There is **no need** to fine-tune the model on each video. Left: input videos. Right: Edited videos.
+Our method requires only an **input video** and an **editing prompt** to modify the video. There is **no need** to fine-tune the model on each video. Left: Input videos. Right: Edited videos.
 
 
 <div class="gif-container">
