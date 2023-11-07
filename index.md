@@ -89,7 +89,7 @@ title: Instruct Vid2Vid
 
 
 <div class="button-container">
-  <a href="https://arxiv.org" target="_blank">
+  <a href="https://arxiv.org/abs/2311.00213" target="_blank">
       <button class="button">arXiv</button>
   </a>
   <a href="https://github.com" target="_blank">
